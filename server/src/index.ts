@@ -22,7 +22,7 @@ app.use(
 app.use(morgan('combined', { stream: new LogStream() }));
 
 /*
- * Cors is enabled so the client can acces enpoint on this API wthout having to make request *
+ * Cors is enabled so the client can access endpoint on this API wthout having to make request *
  *  from the same Origin
  */
 app.use(function (
