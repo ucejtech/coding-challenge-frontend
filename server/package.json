@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "tsc init",
     "build:watch": "tsc --watch",
-    "watch": "nodemon dist/index"
+    "dev": "nodemon dist/index"
   },
   "keywords": [],
   "author": "",

@@ -8,6 +8,7 @@ import morgan from 'morgan';
 import { LogStream } from './config/logger';
 import { HttpErrorException } from './@types/exceptions';
 import corsConfig from './config/cors';
+import router from './routes';
 const PORT = 3000;
 
 const app: Application = express();
@@ -40,6 +41,8 @@ app.use(function (
   }
   next();
 });
+
+router(app);
 
 app.listen(PORT, () => {
   console.log(`Server listening on PORT: ${PORT}`);
