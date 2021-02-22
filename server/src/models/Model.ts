@@ -8,9 +8,9 @@ class Model {
     this.dataSource = dataSource;
   }
 
-  find(key: string, value: string | number) {
+  find(key: string, value: string | number): ModelInterface | null {
     const result = this.dataSource.find((x) => x[key] === value);
-    return result || {};
+    return result || null;
   }
 
   findAll() {
